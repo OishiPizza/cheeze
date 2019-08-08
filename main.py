@@ -7,6 +7,8 @@ def repl():
     if line == "view":
         for l in log:
             print(l)
+    elif line == "exit":
+        exit();
     else:
         print(">",line)
         log.append(line)
